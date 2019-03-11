@@ -8,20 +8,71 @@
 </head>
 <body>
 <div class="jumbotron text-center">
-    <h1>Les variables en javascript</h1>
+    <h1>
+        <small>PDD 2019 |</small>
+        Les variables en javascript
+    </h1>
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="01-introduction-js.html">1) Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">2) Variables et commentaires</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">3) </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 <div class="container">
     <p>Les variables sont des conteneurs dans lesquels on peut stocker des valeurs. Pour commencer, il faut déclarer une
-        variable avec le mot-clé let en le faisant suivre de son nom.</p>
-    <p><code>let myVariable = "Hello world!";</code></p>
+        variable avec le mot-clé
+        <mark>let</mark>
+        en le faisant suivre de son nom (il existe également comme mots-clés
+        <mark>var</mark>
+        et
+        <mark>const</mark>
+        jouant sur la portée des variables ou sur la possibilité de les modifier, mais nous ne les verrons pas dans ce
+        cours).
+    </p>
+    <p><code>&lt;script&gt;<br>let myVariable = "Hello world!";<br>&lt;/script&gt;</code></p>
+    <p>Pourquoi a-t-on besoin de variables ? Et bien parce qu'elles sont essentielles à la programmation. Si les valeurs
+        ne pouvaient pas changer, on ne pourrait rien faire de dynamique, comme personnaliser un message de bienvenue ou
+        changer l'image affichée dans une galerie etc...</p>
     <p>Une variable JavaScript doit commencer par une lettre, un tiret bas (_) ou un symbole dollar ($). Les caractères
         qui suivent peuvent être des chiffres (0 à 9).</p>
+    <p><a href="https://mothereff.in/js-variables" target="_blank">Voici un validateur de nom de variable en JS</a></p>
     <p>Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si
         vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique
         de les mettre à la fin de chaque instruction.</p>
+    <p>Pour afficher un commentaire sur une seule ligne, on utilise:</p>
+    <p><code>&lt;script&gt;<br>
+        // ici notre commentaire sur une ligne<br>&lt;/script&gt;</code></p>
+    <p>Pour afficher un commentaire sur plusieurs lignes, on utilise les balises ouvrantes ET fermantes:</p>
+    <p><code>&lt;script&gt;<br>
+        /*<br/>
+        Commentaires<br>
+        sur plusieures lignes<br>*/<br>&lt;/script&gt;</code></p>
+    <h4>Exemple de déclaration d'une variable</h4>
     <script>
+        // création d'une variable contenant une chaîne de caractère
         let myVariable = "Hello world!";
+        /*
+        console.log() permet
+        d'afficher le contenu
+        de la variable dans la
+        console
+         */
+        console.log(myVariable);
     </script>
+    <p>Ouvrez la console pour visualiser la variable</p>
 </div>
+<footer class="py-5 bg-light">
+    <div class="container">
+        <p class="m-0 text-center">Copyright &copy; PDD 2019  - CF2m - Pitz Michaël</p>
+    </div>
+</footer>
 </body>
 </html>
