@@ -12,13 +12,13 @@
     <nav class="navbar navbar-expand-sm">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link">1) Introduction</a>
+                <a class="nav-link">1) Introduction et commentaires</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="02-variables-js.html">2) Variables et commentaires</a>
+                <a class="nav-link" href="02-variables-js.html">2) Déclaration d'une variable</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">3) </a>
+                <a class="nav-link" href="03-types-de-variables.html">3) Les types de variables en javascript</a>
             </li>
         </ul>
     </nav>
@@ -43,9 +43,19 @@
     <p>Par soucis de clarté et le nombre limité de cours dans la section PDD, nous le verrons du côté Front-End, ce qui permettra d'avoir un résultat visible
         immédiatement.</p>
     <p>Nous mettrons donc notre javascript sous forme de scripts immédiatement intégrés dans l'html, ou importés depuis un fichier en .js dans nos pages html.</p>
-    <p>Les balises html permettant de mettre du JavaScript dans l'html sont:</p>
+    <h5>Les balises html permettant de mettre du JavaScript dans l'html sont:</h5>
     <p><code>&lt;script&gt; // ici notre code js &lt;/script&gt;</code></p>
     <p>Nous mettrons, du moins au début, ces balises juste avant la fermeture du body en html pour être certain que la page soit chargée avant l'exécution du script.</p>
+    <h5>Les commentaires</h5>
+    <p>Les commentaires permettent de donner des explications sur le code, mais ne sont pas exécutés</p>
+    <p>Pour afficher un commentaire sur une seule ligne, on utilise:</p>
+    <p><code>&lt;script&gt;<br>
+        // ici notre commentaire sur une ligne<br>&lt;/script&gt;</code></p>
+    <p>Pour afficher un commentaire sur plusieurs lignes, on utilise les balises ouvrantes ET fermantes:</p>
+    <p><code>&lt;script&gt;<br>
+        /*<br/>
+        Commentaires<br>
+        sur plusieures lignes<br>*/<br>&lt;/script&gt;</code></p>
 </div>
 <footer class="py-5 bg-light">
     <div class="container">
